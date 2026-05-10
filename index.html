@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        surface: '#131313',
+                        'surface-container': '#131313',
+                        'surface-container-low': '#1a1a1a',
+                        background: '#131313',
+                        'primary-container': '#333333',
+                        'secondary-container': '#444444',
+                        'on-surface-variant': '#a0a0a0'
+                    },
+                    spacing: {
+                        'margin-edge': '48px',
+                        'stack-xl': '64px',
+                        'stack-lg': '32px',
+                        'stack-md': '16px'
+                    },
+                    fontFamily: {
+                        'display-lg': ['Oswald', 'Noto Serif'],
+                        'display-md': ['Oswald', 'Noto Serif']
+                    },
+                    fontSize: {
+                        'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }],
+                        'display-md': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '700' }],
+                        'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }],
+                        'body-lg': ['18px', { lineHeight: '28px' }],
+                        'body-md': ['16px', { lineHeight: '24px' }],
+                        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.08em', fontWeight: '500' }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background min-h-screen selection:bg-white/20">
+
+    <!-- Navigation Bar -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 px-8 md:px-16 py-6 flex justify-between items-center transition-all duration-300 bg-gradient-to-b from-black/60 to-transparent pointer-events-auto">
+        <a href="#"
+            class="font-display-md text-2xl tracking-widest uppercase font-bold text-white hover:text-purple-400 transition-colors">GLOWY</a>
+        <div class="hidden md:flex items-center gap-10 font-serif text-sm uppercase tracking-widest text-white/70">
+            <a href="#work" class="hover:text-white hover:text-glow transition-all">Work</a>
+            <a href="#process" class="hover:text-white hover:text-glow transition-all">Process</a>
+            <a href="content-creation.html" class="hover:text-white hover:text-glow transition-all">Content Creation</a>
+            <a href="contact.html" class="hover:text-white hover:text-glow transition-all">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="relative h-[100vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/Gemini_Generated_Image_dthg1ydthg1ydthg.png" alt="Cinematic background"
+                class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#131313_100%)]"></div>
+        </div>
+        <div class="relative z-10 text-center max-w-5xl px-margin-edge">
+            <h2
+                class="font-display-lg text-display-lg md:text-6xl lg:text-7xl text-white leading-[1.1] uppercase tracking-tighter font-black">
+                I don’t shoot commercials — I create films that move brands forward
+            </h2>
+        </div>
+    </section>
+    <!-- 2. Identification Section ("Who Are We") -->
+    <section
+        class="w-full min-h-[600px] grid grid-cols-1 md:grid-cols-2 bg-surface-container overflow-hidden border-b border-white/5">
+        <!-- Left Side: Cinematic Image -->
+        <div class="relative h-64 md:h-full">
+            <img alt="glow logo set" src="assets/glow.JPG" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#131313_100%)]"></div>
+        </div>
+        </div>
+        <!-- Right Side: Brand Story -->
+        <div class="flex flex-col justify-center px-12 md:px-24 py-16 md:py-0 bg-surface-container">
+            <h2 class="font-display-md text-display-md text-white mb-6 uppercase tracking-tight text-glow">
+                GLOW AGENCY
+            </h2>
+            <div class="space-y-6">
+                <p class="font-body-lg text-body-lg text-white leading-relaxed">
+                    Glow Agency is a filmmaking and video production studio dedicated to the art of authentic
+                    storytelling.
+                </p>
+                <p class="font-body-md text-on-surface-variant leading-relaxed opacity-90">
+                    We believe that the most powerful content is rooted in truth and human connection. We bring an
+                    emotional depth and a soulful, cinematic touch to every project. Our mission is to tell stories with
+                    purpose, creating high-impact visuals that resonate across cultures and leave a lasting, positive
+                    impression.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Brand Marquee Section -->
+    <section class="w-full py-stack-lg border-y border-white/5 bg-surface-container-low overflow-hidden">
+        <div class="relative flex overflow-x-hidden">
+            <div class="animate-marquee flex items-center gap-20 py-4 opacity-50 grayscale transition-all duration-10">
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+                <img src="assets/Aljazeera.png" alt="Aljazeera logo" class="w-24 h-auto" />
+            </div>
+        </div>
+    </section>
+    <!-- 3. Videos Section -->
+    <section id="work" class="sticky-wrapper">
+        <div class="sticky-container">
+            <div class="horizontal-scroller" id="horizontal-scroller">
+                <!-- Video Item 1 -->
+                <div class="carousel-item group relative overflow-hidden cursor-pointer" data-video-item>
+                    <video class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        playsinline>
+                        <source src="assets/king eng diff logo.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+
+                    <!-- Play Button -->
+                    <div
+                        class="video-play-btn absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-300 z-20">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center hover:bg-white/40 transition-all duration-200">
+                            <svg class="w-10 h-10 text-white fill-white ml-1" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Video Controls -->
+                    <div
+                        class="video-controls absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 z-30">
+                        <!-- Progress Bar -->
+                        <div class="progress-container flex items-center gap-2 mb-3 cursor-pointer">
+                            <div class="progress-bar flex-1 h-1 bg-gray-600 rounded-full relative group/progress">
+                                <div
+                                    class="progress-fill h-full bg-purple-500 rounded-full transition-all duration-100">
+                                </div>
+                                <div
+                                    class="progress-handle absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full opacity-0 group-hover/progress:opacity-100 transition-opacity -translate-x-1/2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls Row -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <!-- Play/Pause Button -->
+                                <button
+                                    class="video-play-pause-btn flex items-center justify-center w-8 h-8 text-white hover:text-purple-400 transition-colors">
+                                    <svg class="w-6 h-6 fill-current play-icon" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current pause-icon hidden" viewBox="0 0 24 24">
+                                        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                                    </svg>
+                                </button>
+
+                                <!-- Volume Control -->
+                                <div class="volume-control flex items-center gap-2">
+                                    <button
+                                        class="volume-btn flex items-center justify-center w-6 h-6 text-white hover:text-purple-400 transition-colors">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.1v2.02c2.84.86 4.93 3.5 4.93 6.85s-2.02 5.99-4.93 6.85v2.02c4.45-.91 7.75-4.75 7.75-9.32 0-4.57-3.3-8.41-7.75-9.32z" />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="volume-slider hidden w-20 h-1 bg-gray-600 rounded-full relative cursor-pointer">
+                                        <div class="volume-fill h-full bg-purple-500 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Display -->
+                            <div class="text-white text-xs font-mono">
+                                <span class="current-time">0:00</span> / <span class="duration-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="video-title absolute bottom-12 left-12 md:bottom-24 md:left-24 transition-opacity duration-300">
+                        <span
+                            class="font-label-sm text-on-surface-variant mb-4 block tracking-[0.3em] uppercase">Galleries</span>
+                        <h3
+                            class="font-display-lg text-display-lg md:text-7xl text-white transition-colors tracking-tight uppercase">
+                            THE ART OF SPEED</h3>
+                    </div>
+                </div>
+                <!-- Video Item 2 -->
+                <div class="carousel-item group relative overflow-hidden cursor-pointer" data-video-item>
+                    <video class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        playsinline>
+                        <source src="assets/queen eng diff logo.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+
+                    <!-- Play Button -->
+                    <div
+                        class="video-play-btn absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-300 z-20">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center hover:bg-white/40 transition-all duration-200">
+                            <svg class="w-10 h-10 text-white fill-white ml-1" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Video Controls -->
+                    <div
+                        class="video-controls absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 z-30">
+                        <!-- Progress Bar -->
+                        <div class="progress-container flex items-center gap-2 mb-3 cursor-pointer">
+                            <div class="progress-bar flex-1 h-1 bg-gray-600 rounded-full relative group/progress">
+                                <div
+                                    class="progress-fill h-full bg-purple-500 rounded-full transition-all duration-100">
+                                </div>
+                                <div
+                                    class="progress-handle absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full opacity-0 group-hover/progress:opacity-100 transition-opacity -translate-x-1/2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls Row -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <!-- Play/Pause Button -->
+                                <button
+                                    class="video-play-pause-btn flex items-center justify-center w-8 h-8 text-white hover:text-purple-400 transition-colors">
+                                    <svg class="w-6 h-6 fill-current play-icon" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current pause-icon hidden" viewBox="0 0 24 24">
+                                        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                                    </svg>
+                                </button>
+
+                                <!-- Volume Control -->
+                                <div class="volume-control flex items-center gap-2">
+                                    <button
+                                        class="volume-btn flex items-center justify-center w-6 h-6 text-white hover:text-purple-400 transition-colors">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.1v2.02c2.84.86 4.93 3.5 4.93 6.85s-2.02 5.99-4.93 6.85v2.02c4.45-.91 7.75-4.75 7.75-9.32 0-4.57-3.3-8.41-7.75-9.32z" />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="volume-slider hidden w-20 h-1 bg-gray-600 rounded-full relative cursor-pointer">
+                                        <div class="volume-fill h-full bg-purple-500 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Display -->
+                            <div class="text-white text-xs font-mono">
+                                <span class="current-time">0:00</span> / <span class="duration-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="video-title absolute bottom-12 left-12 md:bottom-24 md:left-24 transition-opacity duration-300">
+                        <span
+                            class="font-label-sm text-on-surface-variant mb-4 block tracking-[0.3em] uppercase">Featured
+                            Work</span>
+                        <h3
+                            class="font-display-lg text-display-lg md:text-7xl text-white transition-colors tracking-tight uppercase">
+                            RUN THE FUTURE</h3>
+                    </div>
+                </div>
+                <!-- Video Item 3 -->
+                <div class="carousel-item group relative overflow-hidden cursor-pointer" data-video-item>
+                    <video class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        playsinline>
+                        <source src="assets/king eng diff logo.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+
+                    <!-- Play Button -->
+                    <div
+                        class="video-play-btn absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-300 z-20">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center hover:bg-white/40 transition-all duration-200">
+                            <svg class="w-10 h-10 text-white fill-white ml-1" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Video Controls -->
+                    <div
+                        class="video-controls absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 z-30">
+                        <!-- Progress Bar -->
+                        <div class="progress-container flex items-center gap-2 mb-3 cursor-pointer">
+                            <div class="progress-bar flex-1 h-1 bg-gray-600 rounded-full relative group/progress">
+                                <div
+                                    class="progress-fill h-full bg-purple-500 rounded-full transition-all duration-100">
+                                </div>
+                                <div
+                                    class="progress-handle absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full opacity-0 group-hover/progress:opacity-100 transition-opacity -translate-x-1/2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls Row -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <!-- Play/Pause Button -->
+                                <button
+                                    class="video-play-pause-btn flex items-center justify-center w-8 h-8 text-white hover:text-purple-400 transition-colors">
+                                    <svg class="w-6 h-6 fill-current play-icon" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current pause-icon hidden" viewBox="0 0 24 24">
+                                        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                                    </svg>
+                                </button>
+
+                                <!-- Volume Control -->
+                                <div class="volume-control flex items-center gap-2">
+                                    <button
+                                        class="volume-btn flex items-center justify-center w-6 h-6 text-white hover:text-purple-400 transition-colors">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.1v2.02c2.84.86 4.93 3.5 4.93 6.85s-2.02 5.99-4.93 6.85v2.02c4.45-.91 7.75-4.75 7.75-9.32 0-4.57-3.3-8.41-7.75-9.32z" />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="volume-slider hidden w-20 h-1 bg-gray-600 rounded-full relative cursor-pointer">
+                                        <div class="volume-fill h-full bg-purple-500 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Display -->
+                            <div class="text-white text-xs font-mono">
+                                <span class="current-time">0:00</span> / <span class="duration-time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="video-title absolute bottom-12 left-12 md:bottom-24 md:left-24 transition-opacity duration-300">
+                        <span
+                            class="font-label-sm text-on-surface-variant mb-4 block tracking-[0.3em] uppercase">Legacy</span>
+                        <h3
+                            class="font-display-lg text-display-lg md:text-7xl text-white transition-colors tracking-tight uppercase">
+                            TIMELESS PRECISION</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- 5. Process Section -->
+    <section id="process" class="bg-surface-container py-stack-xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 pointer-events-none transform-gpu">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white blur-[90px] rounded-full transform-gpu"></div>
+            <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-white blur-[80px] rounded-full transform-gpu"></div>
+        </div>
+        <div class="mx-auto px-margin-edge relative z-10 w-full">
+            <h2 class="font-display-md text-display-md text-center mb-stack-xl text-glow uppercase tracking-tight">Work
+                With Us</h2>
+            <div class="relative flex flex-col items-center">
+                <!-- Center Line -->
+                <div class="absolute h-full w-px bg-white/10 left-1/2 -translate-x-1/2 z-0" id="timeline-track">
+                    <div class="absolute top-0 left-0 w-full h-0 bg-gradient-to-b from-purple-500 via-purple-500/50 to-transparent transition-all duration-500 ease-out shadow-[0_0_20px_4px_rgba(168,85,247,0.8)]"
+                        id="timeline-progress"></div>
+                </div>
+                <!-- Timeline Item 01 -->
+                <div class="flex items-center w-full group mb-32 relative" data-timeline-item="true">
+                    <div class="w-1/2 pr-16 text-right timeline-content">
+                        <span class="font-display-md text-white text-headline-md block mb-1">01</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Consultation</h3>
+                        <p class="font-body-md text-on-surface-variant">Fill the form to start our creative journey
+                            together.</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-10">
+                        <div class="w-4 h-4 rounded-full ring-8 ring-background timeline-dot"></div>
+                    </div>
+                    <div class="w-1/2 pl-16 timeline-content"></div>
+                </div>
+                <!-- Timeline Item 02 -->
+                <div class="flex items-center w-full group mb-32 relative" data-timeline-item="true">
+                    <div class="w-1/2 pr-16 timeline-content"></div>
+                    <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-10">
+                        <div class="w-4 h-4 rounded-full ring-8 ring-background timeline-dot"></div>
+                    </div>
+                    <div class="w-1/2 pl-16 timeline-content">
+                        <span class="font-display-md text-white text-headline-md block mb-1">02</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Project Review</h3>
+                        <p class="font-body-md text-on-surface-variant">We meticulously review your vision and project
+                            goals.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 03 -->
+                <div class="flex items-center w-full group mb-32 relative" data-timeline-item="true">
+                    <div class="w-1/2 pr-16 text-right timeline-content">
+                        <span class="font-display-md text-white text-headline-md block mb-1">03</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Creative Discussion</h3>
+                        <p class="font-body-md text-on-surface-variant">Deep dive into stylistic details and cinematic
+                            approach.</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-10">
+                        <div class="w-4 h-4 rounded-full ring-8 ring-background timeline-dot"></div>
+                    </div>
+                    <div class="w-1/2 pl-16 timeline-content"></div>
+                </div>
+                <!-- Timeline Item 04 -->
+                <div class="flex items-center w-full group mb-32 relative" data-timeline-item="true">
+                    <div class="w-1/2 pr-16 timeline-content"></div>
+                    <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-10">
+                        <div class="w-4 h-4 rounded-full ring-8 ring-background timeline-dot"></div>
+                    </div>
+                    <div class="w-1/2 pl-16 timeline-content">
+                        <span class="font-display-md text-white text-headline-md block mb-1">04</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Production</h3>
+                        <p class="font-body-md text-on-surface-variant">Bringing it to life with world-class equipment
+                            and crew.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 05 -->
+                <div class="flex items-center w-full group mb-32 relative" data-timeline-item="true">
+                    <div class="w-1/2 pr-16 text-right timeline-content">
+                        <span class="font-display-md text-white text-headline-md block mb-1">05</span>
+                        <h3 class="font-headline-md text-headline-md mb-2">Final Delivery</h3>
+                        <p class="font-body-md text-on-surface-variant">Exceptional results delivered with atmospheric
+                            precision.</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-10">
+                        <div class="w-4 h-4 rounded-full ring-8 ring-background timeline-dot"></div>
+                    </div>
+                    <div class="w-1/2 pl-16 timeline-content"></div>
+                </div>
+            </div>
+            <div class="text-center mt-stack-lg relative z-20">
+                <button
+                    class="bg-surface-container border-2 border-white text-white hover:bg-purple-500 hover:text-white font-serif py-4 px-12 transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,85,247,0.8)] uppercase tracking-widest font-bold rounded-full">Apply
+                    Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-16 bg-background">
+        <div class="flex flex-col items-center gap-8 w-full mx-auto px-8">
+            <div class="font-serif text-lg font-bold text-white/40">AURA CINEMA</div>
+            <div class="flex gap-stack-lg">
+                <a class="font-serif text-sm uppercase tracking-widest text-white/50 hover:text-white transition-all opacity-80 hover:opacity-100"
+                    href="#">Instagram</a>
+                <a class="font-serif text-sm uppercase tracking-widest text-white/50 hover:text-white transition-all opacity-80 hover:opacity-100"
+                    href="#">Vimeo</a>
+                <a class="font-serif text-sm uppercase tracking-widest text-white/50 hover:text-white transition-all opacity-80 hover:opacity-100"
+                    href="#">Email</a>
+            </div>
+            <div class="font-serif text-sm uppercase tracking-widest text-white/30 opacity-60">
+                © 2024 AURA CINEMA. ARCHIVING MOTION.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
